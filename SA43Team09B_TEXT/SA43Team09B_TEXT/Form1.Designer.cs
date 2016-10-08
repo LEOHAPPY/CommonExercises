@@ -28,111 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Search_button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.MemberID_textBox = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Print_button = new System.Windows.Forms.Button();
-            this.Cancel_button = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Search_button
+            // toolTip1
             // 
-            this.Search_button.Location = new System.Drawing.Point(241, 425);
-            this.Search_button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Search_button.Name = "Search_button";
-            this.Search_button.Size = new System.Drawing.Size(138, 42);
-            this.Search_button.TabIndex = 0;
-            this.Search_button.Text = "Search";
-            this.Search_button.UseVisualStyleBackColor = true;
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 346);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "MemberID";
+            this.button1.Location = new System.Drawing.Point(269, 262);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // MemberID_textBox
+            // button2
             // 
-            this.MemberID_textBox.Location = new System.Drawing.Point(282, 340);
-            this.MemberID_textBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MemberID_textBox.Name = "MemberID_textBox";
-            this.MemberID_textBox.Size = new System.Drawing.Size(180, 29);
-            this.MemberID_textBox.TabIndex = 2;
+            this.button2.Location = new System.Drawing.Point(342, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(42, 79);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // linkLabel1
+            // button3
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(64, 56);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(0, 24);
-            this.linkLabel1.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 56);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 244);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // Print_button
-            // 
-            this.Print_button.Location = new System.Drawing.Point(45, 425);
-            this.Print_button.Margin = new System.Windows.Forms.Padding(6);
-            this.Print_button.Name = "Print_button";
-            this.Print_button.Size = new System.Drawing.Size(138, 42);
-            this.Print_button.TabIndex = 5;
-            this.Print_button.Text = "Print";
-            this.Print_button.UseVisualStyleBackColor = true;
-            // 
-            // Cancel_button
-            // 
-            this.Cancel_button.Location = new System.Drawing.Point(444, 425);
-            this.Cancel_button.Margin = new System.Windows.Forms.Padding(6);
-            this.Cancel_button.Name = "Cancel_button";
-            this.Cancel_button.Size = new System.Drawing.Size(138, 42);
-            this.Cancel_button.TabIndex = 6;
-            this.Cancel_button.Text = "Cancel";
-            this.Cancel_button.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(130, 126);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(86, 24);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 550);
-            this.Controls.Add(this.Cancel_button);
-            this.Controls.Add(this.Print_button);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.MemberID_textBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Search_button);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ClientSize = new System.Drawing.Size(408, 312);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "FindMyAllRecord";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Search_button;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox MemberID_textBox;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button Print_button;
-        private System.Windows.Forms.Button Cancel_button;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
